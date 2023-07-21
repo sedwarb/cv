@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CV Edwar Sebrian</title>
+</head>
+<body>
+    <!--Contenedor para telefono-->
+    <div class="container d-lg-none">
+        <article class="card border-white">
+            <div class="card-body mb-2">
+                <!--Titulo-->
+                <h1 class="card-title mb-2">Edwar Sebrian</h1>
+                <h4 class="card-subtitle mb-2">Full Stack Developer | Programador de mantenimento</h4>
+                <p>Me apasiona el hecho de poder crear aplicaciones web interactivas e innovadoras que simplifiquen tareas solucionando problemas a los
+                    usuarios.
+                </p>
+                <!--Contacto-->
+                <h3  style="color: lightslategray;"><strong>CONTACTOS</strong></h3>
+                <div class="p-1 text-white rounded h5" style="background-color:lightslategray;">
+                    <div>
+                        <div class="m-1">
+                            <img style="width: 25px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTf7aLasF02TzckSQdXO1qgXEsWMZ8uu1yy2fke8kOqyIzYD9TrXF4bJIaz6oaHsJDrgg&usqp=CAU" alt=""> 
+                            <span>sedwarb@gmail.com</span>
+                        </div>
+                        <div class="m-1">
+                            <img style="width: 25px;" src="data:image/png;base64,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" alt="">
+                            <span>+573206707858</span>
+                        </div>
+                        <div class="m-1">
+                            <img style="width: 25px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRo7Fyhe-Xbc1TlODkPyaZbf9LakiM8aoqFoX83d-zQl9_a21cSLZFLyLbqX8Z8jUMxEU&usqp=CAU" alt="">
+                            <span>Cali, Colombia</span>
+                        </div>
+                        <div class="m-1">
+                            <img style="width: 25px;" src="https://cdn.pixabay.com/photo/2017/10/04/11/58/linkedin-2815969_1280.jpg" alt="">
+                            <a href="https://www.linkedin.com/in/edwar-sebrian-8b3b59225"  class="link-light">linkedin/Edwar</a>
+                        </div>
+                        <div class="m-1">
+                            <img style="width: 25px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/200px-GitHub_Invertocat_Logo.svg.png" alt="">
+                            <a href="https://github.com/sedwarb/" class="link-light">github/sedwarb</a>
+                        </div>
+                    </div>                    
+                </div>
+                <!--Competencias-->
+                <h3  style="color: lightslategray;"><strong>COMPETENCIAS</strong></h3>
+                <div class="row mb-3">                            
+                    <div class="mb-1">
+                        <button
+                        data-bs-placement="right"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Lenguaje de Programacion">
+                            JavaScript
+                        </button>
+                        <button
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Lenguaje de Programacion">
+                            Python
+                        </button>
+                        <button
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Lenguaje de Programacion">
+                            Java
+                        </button>
+                    </div>
+                    <div class="mb-1">
+                        <button
+                        data-bs-placement="right"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Framework JavaScript/TypeScript">
+                            Angular
+                        </button>
+                        <button
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Framework JavaScript">
+                            Bootstrap
+                        </button>
+                        <button
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Lenguaje de consulta para base de datos">
+                            Sql
+                        </button>                                                
+                    </div>
+                    <div class="mb-1">
+                        <button
+                        data-bs-placement="right"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Estilos en Cascada para Html">
+                            Css
+                        </button>
+                        <button
+                        data-bs-placement="bottom"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="ORM para consulta de base de datos">
+                            Sequelize
+                        </button>
+                        <button
+                        data-bs-placement="bottom"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Lenguaje de etiquetas">
+                            Html
+                        </button>                        
+                    </div>
+                    <div class="mb-1">
+                        <button
+                        data-bs-placement="right"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Framework Backend">
+                            ExpressJs
+                        </button>
+                        <button
+                        data-bs-placement="bottom"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Portal para alojar versiones de codigo">
+                            GitHub
+                        </button>
+                        <button
+                        data-bs-placement="bottom"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Entorno de Ejecucion JavaScript">
+                            NodeJs
+                        </button>
+                    </div>
+                    <div>                        
+                        <button
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Libreria de JavaScript">
+                            ReactJs
+                        </button>
+                        <button
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Metodologia agil">
+                            Scrum
+                        </button>
+                        <button
+                        data-bs-placement="bottom"
+                        data-bs-trigger="focus"
+                        class="rounded m-sm-1 text-white border-0" 
+                        style="background-color:lightslategray;" 
+                        data-bs-toggle="popover" 
+                        data-bs-content="Administrador de Base de datos">
+                            PostgreSql
+                        </button>
+                    </div>
+                </div>
+
+                <div class="accordion" id="acordeonPapa">
+                    <!--Formacion-->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#formacion"><strong>FORMACION</strong></button>
+                        </h3>
+                        <div class="accordion-collapse collapse show" id="formacion" data-bs-parent="#acordeonPapa">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="mb-1">
+                                        <h4>Full Stack Developer</h4>
+                                        <h6>Henry Bootcamp</h5>
+                                        <p>12/2021 a 06/2022</p>
+                                        <button
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modal1t"                                        
+                                            class="btn btn-outline-warning">
+                                            Ver mas
+                                        </button>
+                                        <div class="modal fade" id="modal1t" data-bs-backdrop="static">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Full Stack Developer - Henry Bootcamp</h5>
+                                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>Contenido del Curso</h6>
+                                                        <ul>
+                                                            <li>
+                                                                <h6>Lenguaje de Programacion:</h6>
+                                                                <h6>JavaScript /  ECMAScript</h6>
+                                                                <p>Estructura de datos, Bucles, Funciones, Operadores, Objetos, Clases, Promesas, Modulos, Clousures, Manejo de errores</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Frontend - Hltm/Css:</h6>
+                                                                <p>Lenguaje de Etiquetas y Hojas de Estilo en Cascada</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Framework Frontend:</h6>
+                                                                <h6>ReactJs</h6>
+                                                                <p>Componentes, Estados, Hooks, Eventos, Developer Tool, Enrutado, Redux</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Framework Backend:</h6>
+                                                                <h6>ExpresstJs</h6>
+                                                                <p>Direccionamiento, Rutas, Metodos de respuesta</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Backend - ORM:</h6>
+                                                                <h6>Sequelize</h6>
+                                                                <p>Modelos, Instancias, Consultas, Validaciones, Asociaciones</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Backend - Base de Datos:</h6>
+                                                                <h6>PostgreSql</h6>
+                                                                <p>Motor de Base de datos, uso de aplicacion</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-1">
+                                        <h4>Ingenieria en Informatica</h4>
+                                        <h6>Universidad Dr Rafael Belloso Chacin</h6>
+                                        <p>09/1999 a 06/2005</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Experiencia Laboral-->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button  collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#experiencia"><strong>EXPERIENCIA LABORAL</strong></button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="experiencia" data-bs-parent="#acordeonPapa">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled" id="colapso-laboral">
+                                    <li class="mb-1">
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#desarrolloa">Desarrollo de App Web</button>
+                                        </div>                                        
+                                        <div id="desarrolloa" class="collapse mt-2" data-bs-parent="#colapso-laboral">
+                                            <h6>Estetica - Freelancer</h6>
+                                            <p>07/2022 a presente</p>
+                                            <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                            <ul>
+                                                <li><p>Desarrollo de backend con Javascript, nodejs, sequelize,
+                                                    posgresql, express</p></li>
+                                                <li><p>Desarrollo de Frontend con Javascript, React, Boostrap</p></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mb-1">
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#analistap">Analista de Compras</button>
+                                        </div>                                        
+                                        <div id="analistap" class="collapse mt-2" data-bs-parent="#colapso-laboral">
+                                            <h6>Petróleos de Venezuela, S.A</h6>
+                                            <p>10/2018 a 03/2019</p>
+                                            <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                            <ul>
+                                                <li><p>Iniciar expedientes de compra</p></li>
+                                                <li><p>Realizar reuniones periodicas con los requirientes</p></li>
+                                                <li><p>Revisar que los documentos que forman el expediente estén
+                                                    en orden con las leyes de contratación</p></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mb-1">
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#analistapm">Analista de Planificacion de Mtto</button>
+                                        </div>                                        
+                                        <div id="analistapm" class="collapse mt-2" data-bs-parent="#colapso-laboral">
+                                            <h6>Petróleos de Venezuela, S.A</h6>
+                                            <p>10/2014 a 10/2016</p>
+                                            <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                            <ul>
+                                                <li><p>Administrar Ordenes de Trabajo de Mantenimiento Electrico</p></li>
+                                                <li><p>Elaborar la Planificacion del mantenimiento de los equipos
+                                                    electricos</p></li>
+                                                <li><p>Hacer seguimiento al cumplimiento la planificación</p></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!--Experiencia Academica-->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#academica"><strong>EXPERIENCIA ACADEMICA</strong></button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="academica" data-bs-parent="#acordeonPapa">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled" id="colapso-academico">
+                                    <li class="mb-1">
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#proyectog">Proyecto Grupal Ecomerce</button>
+                                        </div>
+                                        <div id="proyectog" class="collapse mt-2" data-bs-parent="#colapso-academico">
+                                            <h4>(05/2022 - 06/2022)</h4>
+                                            <ul>
+                                                <li><p>Desarrollo de modelo de base de datos Sequelize</p></li>
+                                                <li><p>Desarrollo de funciones para manejo de datos en el Backend
+                                                    usando javascript, nodejs y sequelize</p></li>
+                                            </ul>
+                                        </div>                                        
+                                    </li>
+                                    <li class="mb-1">
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#proyectoi">Proyecto Individual Henry</button>
+                                        </div>
+                                        <div id="proyectoi" class="collapse mt-2" data-bs-parent="#colapso-academico">
+                                            <h4>(04/2022 - 05/2022)</h4>
+                                            <ul>
+                                                <li><p>Desarrollo de modelos de base datos Sequelize</p></li>
+                                                <li><p>Creacion de Servidor Express</p></li>
+                                                <li><p>Creacion de Componentes React-Redux</p></li>
+                                            </ul>
+                                        </div>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Idiomas-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#idiomas"><strong>IDIOMAS</strong></button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="idiomas" data-bs-parent="#acordeonPapa">
+                            <div class="accordion-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h4>Español</h4>
+                                        <p><strong>Nativo</strong></p>
+                                    </div>
+                                    <div class="col">
+                                        <h4>Ingles</h4>
+                                        <p><strong>Intermedio</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Intereses-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#intereses"><strong>INTERESES</strong></button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="intereses" data-bs-parent="#acordeonPapa">
+                            <div class="accordion-body">
+                                <div class="row mb-3">
+                                    <div class="m-2">
+                                        <strong>Video Juegos de Estrategia</strong>
+                                    </div>
+                                    <div class="m-2">
+                                        <strong>Senderismo</strong>
+                                    </div>
+                                    <div class="m-2">
+                                        <strong>Ciclismo</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--Contenedor para Pantalla grande-->
+    <div class="d-none d-lg-block">
+        <article class="card border-white">
+            <div class="card-body mb-2">
+                <!--Titulo-->
+                <h1 class="card-title mb-2">Edwar Sebrian</h1>
+                <h4 class="card-subtitle mb-2">Full Stack Developer | Programador de mantenimento</h4>
+                <p class="card-text">Me apasiona el hecho de poder crear aplicaciones web interactivas e innovadoras que simplifiquen tareas solucionando problemas a los
+                    usuarios, permitiéndoles aumentar su productividad y eficiencia. Poseer las destrezas en el manejo de herramientas para afrontar
+                    cualquier situación en las etapas de construcción de portales en línea y ser parte de un equipo que se plantee estrategias y objetivos
+                    que lo haga realidad me inspira.
+                </p>
+                <!--Contacto-->
+                <div class="p-2 text-white rounded h5" style="background-color:lightslategray;">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <img style="width: 30px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTf7aLasF02TzckSQdXO1qgXEsWMZ8uu1yy2fke8kOqyIzYD9TrXF4bJIaz6oaHsJDrgg&usqp=CAU" alt=""> 
+                            sedwarb@gmail.com
+                        </div>
+                        <div class="col">
+                            <img style="width: 30px;" src="data:image/png;base64,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" alt="">
+                            +573206707858
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <img style="width: 30px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRo7Fyhe-Xbc1TlODkPyaZbf9LakiM8aoqFoX83d-zQl9_a21cSLZFLyLbqX8Z8jUMxEU&usqp=CAU" alt="">
+                            Cali, Colombia
+                        </div>
+                        <div class="col">
+                            <img style="width: 30px;" src="https://cdn.pixabay.com/photo/2017/10/04/11/58/linkedin-2815969_1280.jpg" alt="">
+                            <a href="https://www.linkedin.com/in/edwar-sebrian-8b3b59225"  class="link-light">linkedin/edwar-sebrian</a>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <img style="width: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/200px-GitHub_Invertocat_Logo.svg.png" alt="">
+                            <a href="https://github.com/sedwarb/" class="link-light">github.com/sedwarb</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="mb-3">
+                            <!--Formacion-->
+                            <h3 class="mb-3" style="color: lightslategray;"><strong>FORMACION</strong></h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="mb-3">
+                                        <h4>Full Stack Developer</h4>
+                                        <h6>Henry Bootcamp</h5>
+                                        <p>12/2021 a 06/2022</p>
+                                        <button
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modal1"                                        
+                                            class="btn btn-outline-warning">
+                                            Ver mas
+                                        </button>
+                                        <div class="modal fade" id="modal1" data-bs-backdrop="static">
+                                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Full Stack Developer - Henry Bootcamp</h5>
+                                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>Contenido del Curso</h6>
+                                                        <ul>
+                                                            <li>
+                                                                <h6>Lenguaje de Programacion:</h6>
+                                                                <h6>JavaScript /  ECMAScript</h6>
+                                                                <p>Estructura de datos, Bucles, Funciones, Operadores, Objetos, Clases, Promesas, Modulos, Clousures, Manejo de errores</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Frontend - Hltm/Css:</h6>
+                                                                <p>Lenguaje de Etiquetas y Hojas de Estilo en Cascada</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Framework Frontend:</h6>
+                                                                <h6>ReactJs</h6>
+                                                                <p>Componentes, Estados, Hooks, Eventos, Developer Tool, Enrutado, Redux</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Framework Backend:</h6>
+                                                                <h6>ExpresstJs</h6>
+                                                                <p>Direccionamiento, Rutas, Metodos de respuesta</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Backend - ORM:</h6>
+                                                                <h6>Sequelize</h6>
+                                                                <p>Modelos, Instancias, Consultas, Validaciones, Asociaciones</p>
+                                                            </li>
+                                                            <li>
+                                                                <h6>Backend - Base de Datos:</h6>
+                                                                <h6>PostgreSql</h6>
+                                                                <p>Motor de Base de datos, uso de aplicacion</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Ingenieria en Informatica</h4>
+                                    <h6>Universidad Dr Rafael Belloso Chacin</h6>
+                                    <p>09/1999 a 06/2005</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-3">
+                            <!--Experiencia Laboral-->
+                            <h3  class="mb-3" style="color: lightslategray;"><strong>EXPERIENCIA LABORAL</strong></h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h4>Desarrollo de App Web</h4>
+                                    <h6>Estetica - Freelancer</h6>
+                                    <p>07/2022 a presente</p>
+                                    <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                    <ul>
+                                        <li><p>Desarrollo de backend con Javascript, nodejs, sequelize,
+                                            posgresql, express</p></li>
+                                        <li><p>Desarrollo de Frontend con Javascript, React, Boostrap</p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>Analista de Procesos de Compra (Procura)</h4>
+                                    <h6>Petróleos de Venezuela, S.A</h6>
+                                    <p>10/2018 a 03/2019</p>
+                                    <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                    <ul>
+                                        <li><p>Iniciar expedientes de compra</p></li>
+                                        <li><p>Realizar reuniones periodicas con los requirientes</p></li>
+                                        <li><p>Revisar que los documentos que forman el expediente estén
+                                            en orden con las leyes de contratación</p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>Analista de Planificacion de Mantenimiento</h4>
+                                    <h6>Petróleos de Venezuela, S.A</h6>
+                                    <p>10/2014 a 10/2016</p>
+                                    <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                    <ul>
+                                        <li><p>Administrar Ordenes de Trabajo de Mantenimiento Electrico</p></li>
+                                        <li><p>Elaborar la Planificacion del mantenimiento de los equipos
+                                            electricos</p></li>
+                                        <li><p>Hacer seguimiento al cumplimiento la planificación</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--Competencias-->
+                        <h3 class="mb-3" style="color: lightslategray;"><strong>COMPETENCIAS</strong></h3>
+                        <div class="row mb-3">
+                            <div class="mb-2">
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="left"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Lenguaje de Programacion">
+                                        JavaScript
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="top"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Lenguaje de Programacion">
+                                        Python
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="top"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Lenguaje de Programacion">
+                                        Java
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="top"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Libreria de JavaScript">
+                                        ReactJs
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="top"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Framework JavaScript/TypeScript">
+                                        Angular
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="top"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Framework JavaScript">
+                                        Bootstrap
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="top"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="ORM para consulta de base de datos">
+                                        Sequelize
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="left"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Administrador de Base de datos">
+                                        PostgreSql
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Lenguaje de consulta para base de datos">
+                                        Sql
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Lenguaje de etiquetas">
+                                        Html
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Estilos en Cascada para Html">
+                                        Css
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Framework Backend">
+                                        ExpressJs
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Portal para alojar versiones de codigo">
+                                        GitHub
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Entorno de Ejecucion JavaScript">
+                                        NodeJs
+                                    </button>
+                                </div>
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="right"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Metodologia agil">
+                                        Scrum
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-2">                                
+                                <div class="d-inline">
+                                    <button
+                                    data-bs-placement="bottom"
+                                    data-bs-trigger="focus"
+                                    class="rounded text-white border-0" 
+                                    style="background-color:lightslategray;" 
+                                    data-bs-toggle="popover" 
+                                    data-bs-content="Programacion en VBA">
+                                        Macros Excel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Experiencia Academica-->
+                        <h3  class="mb-3" style="color: lightslategray;"><strong>EXPERIENCIA ACADEMICA</strong></h3>
+                        <div class="row mb-3">                            
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h4>Proyecto Grupar Ecomerce (05/2022 - 06/2022)</h4>
+                                    <ul>
+                                        <li><p>Desarrollo de modelo de base de datos Sequelize</p></li>
+                                        <li><p>Desarrollo de funciones para manejo de datos en el Backend
+                                            usando javascript, nodejs y sequelize</p></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h4>Proyecto Individual Henry (04/2022 - 05/2022)</h4>
+                                    <ul>
+                                        <li><p>Desarrollo de modelos de base datos Sequelize</p></li>
+                                        <li><p>Creacion de Servidor Express</p></li>
+                                        <li><p>Creacion de Componentes React-Redux</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Idiomas-->
+                        <h3  class="mb-3" style="color: lightslategray;"><strong>IDIOMAS</strong></h3>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <h4>Español</h4>
+                                <p><strong>Nativo</strong></p>
+                            </div>
+                            <div class="col">
+                                <h4>Ingles</h4>
+                                <p><strong>Intermedio</strong></p>
+                            </div>
+                        </div>
+                        <!--Intereses-->
+                        <h3  class="mb-3" style="color: lightslategray;"><strong>INTERESES</strong></h3>
+                        <div class="row mb-3">
+                            <div class="m-2">
+                                <strong>Video Juegos de Estrategia</strong>
+                            </div>
+                            <div class="m-2">
+                                <strong>Senderismo</strong>
+                            </div>
+                            <div class="m-2">
+                                <strong>Ciclismo</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+</html>
