@@ -6,50 +6,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>CV Edwar Sebrian</title>
 </head>
+<style>
+    .lighted{
+        background-color:lightslategray;
+    }
+    .lightedc{
+        color: lightslategray;
+    }
+    .widthimged{
+        width: 25px;
+    }
+</style>
 <body>
+    <!--Titulo-->
+    <section class="p-3">
+        <h1 id="tl1" class="card-title mb-2"></h1>
+        <h4 id="tl2" class="card-subtitle mb-2"></h4>
+        <p id="tl3" class="card-text"></p>
+    </section>
     <!--Contenedor para telefono-->
     <div class="container d-lg-none">
         <article class="card border-white">
             <div class="card-body mb-2">
-                <!--Titulo-->
-                <h1 id="ts1" class="card-title mb-2"></h1>
-                <h4 id="ts2" class="card-subtitle mb-2"></h4>
-                <p id="ts3"></p>
                 <!--Contacto-->
-                <h3  style="color: lightslategray;"><strong>CONTACTOS</strong></h3>
-                <div class="p-1 text-white rounded h5" style="background-color:lightslategray;">
+                <h3 class="lightedc"><b>CONTACTOS</b></h3>
+                <div class="p-1 text-white rounded h5 lighted">
                     <div>
                         <div class="m-1">
-                            <img id="cis0" style="width: 25px;" alt=""> 
+                            <img id="cis0" class="widthimged" alt=""> 
                             <span>sedwarb@gmail.com</span>
                         </div>
                         <div class="m-1">
-                            <img id="cis1" style="width: 25px;" alt="">
+                            <img id="cis1" class="widthimged" alt="">
                             <span>+573206707858</span>
                         </div>
                         <div class="m-1">
-                            <img id="cis2" style="width: 25px;" alt="">
+                            <img id="cis2" class="widthimged" alt="">
                             <span>Cali, Colombia</span>
                         </div>
                         <div class="m-1">
-                            <img id="cis3" style="width: 25px;" alt="">
-                            <a  id="cias0" class="link-light" target="_blank">linkedin/Edwar</a>
+                            <img id="cis3" class="widthimged" alt="">
+                            <a id="cias0" class="link-light" target="_blank">linkedin/Edwar</a>
                         </div>
                         <div class="m-1">
-                            <img id="cis4" style="width: 25px;" alt="">
-                            <a  id="cias1" class="link-light" target="_blank">github/sedwarb</a>
+                            <img id="cis4" class="widthimged" alt="">
+                            <a id="cias1" class="link-light" target="_blank">github/sedwarb</a>
                         </div>
                     </div>                    
                 </div>
                 <!--Competencias-->
-                <h3  style="color: lightslategray;"><strong>COMPETENCIAS</strong></h3>
+                <h3 class="lightedc"><b>COMPETENCIAS</b></h3>
                 <div class="row mb-3">                            
                     <div class="mb-1">
                         <button
                         data-bs-placement="right"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Lenguaje de Programacion">
                             JavaScript
@@ -57,8 +69,7 @@
                         <button
                         data-bs-placement="top"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Lenguaje de Programacion">
                             Python
@@ -66,8 +77,7 @@
                         <button
                         data-bs-placement="top"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Lenguaje de Programacion">
                             Java
@@ -77,8 +87,7 @@
                         <button
                         data-bs-placement="right"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Framework JavaScript/TypeScript">
                             Angular
@@ -86,8 +95,7 @@
                         <button
                         data-bs-placement="top"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Framework JavaScript">
                             Bootstrap
@@ -95,8 +103,7 @@
                         <button
                         data-bs-placement="top"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Lenguaje de consulta para base de datos">
                             Sql
@@ -106,8 +113,7 @@
                         <button
                         data-bs-placement="right"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Estilos en Cascada para Html">
                             Css
@@ -115,8 +121,7 @@
                         <button
                         data-bs-placement="bottom"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="ORM para consulta de base de datos">
                             Sequelize
@@ -124,8 +129,7 @@
                         <button
                         data-bs-placement="bottom"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Lenguaje de etiquetas">
                             Html
@@ -135,8 +139,7 @@
                         <button
                         data-bs-placement="right"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Framework Backend">
                             ExpressJs
@@ -144,8 +147,7 @@
                         <button
                         data-bs-placement="bottom"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Portal para alojar versiones de codigo">
                             GitHub
@@ -153,8 +155,7 @@
                         <button
                         data-bs-placement="bottom"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Entorno de Ejecucion JavaScript">
                             NodeJs
@@ -164,8 +165,7 @@
                         <button
                         data-bs-placement="top"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Libreria de JavaScript">
                             ReactJs
@@ -173,8 +173,7 @@
                         <button
                         data-bs-placement="top"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Programacion en VBA">
                             Macros Excel
@@ -182,8 +181,7 @@
                         <button
                         data-bs-placement="bottom"
                         data-bs-trigger="focus"
-                        class="rounded m-sm-1 text-white border-0" 
-                        style="background-color:lightslategray;" 
+                        class="rounded m-sm-1 text-white border-0 lighted"
                         data-bs-toggle="popover" 
                         data-bs-content="Administrador de Base de datos">
                             PostgreSql
@@ -197,7 +195,7 @@
                         <h3 class="accordion-header">
                             <button class="accordion-button"
                             data-bs-toggle="collapse"
-                            data-bs-target="#formacion"><strong>FORMACION</strong></button>
+                            data-bs-target="#formacion"><b>FORMACION</b></button>
                         </h3>
                         <div class="accordion-collapse collapse show" id="formacion" data-bs-parent="#acordeonPapa">
                             <div class="accordion-body">
@@ -271,19 +269,22 @@
                         <h3 class="accordion-header">
                             <button class="accordion-button  collapsed"
                             data-bs-toggle="collapse"
-                            data-bs-target="#experiencia"><strong>EXPERIENCIA LABORAL</strong></button>
+                            data-bs-target="#experiencia"><b>EXPERIENCIA LABORAL</b></button>
                         </h3>
                         <div class="accordion-collapse collapse" id="experiencia" data-bs-parent="#acordeonPapa">
                             <div class="accordion-body">
                                 <ul class="list-unstyled" id="colapso-laboral">
                                     <li class="mb-1">
                                         <div class="d-grid gap-2">
-                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#desarrolloa">Desarrollo de App Web</button>
+                                            <button 
+                                                class="btn btn-outline-secondary" 
+                                                data-bs-toggle="collapse" 
+                                                data-bs-target="#desarrolloa">Desarrollo de App Web</button>
                                         </div>                                        
                                         <div id="desarrolloa" class="collapse mt-2" data-bs-parent="#colapso-laboral">
                                             <h6>Estetica - Freelancer</h6>
                                             <p>07/2022 a presente</p>
-                                            <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                            <h5 class="lightedc">Logros/Funciones</h5>
                                             <ul>
                                                 <li><p id="euls0"></p></li>
                                                 <li><p id="euls1"></p></li>
@@ -292,33 +293,37 @@
                                     </li>
                                     <li class="mb-1">
                                         <div class="d-grid gap-2">
-                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#analistap">Analista de Compras</button>
+                                            <button 
+                                                class="btn btn-outline-secondary" 
+                                                data-bs-toggle="collapse" 
+                                                data-bs-target="#analistap">Analista de Compras</button>
                                         </div>                                        
                                         <div id="analistap" class="collapse mt-2" data-bs-parent="#colapso-laboral">
                                             <h6>Petróleos de Venezuela, S.A</h6>
                                             <p>10/2018 a 03/2019</p>
-                                            <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                            <h5 class="lightedc">Logros/Funciones</h5>
                                             <ul>
-                                                <li><p>Iniciar expedientes de compra</p></li>
-                                                <li><p>Realizar reuniones periodicas con los requirientes</p></li>
-                                                <li><p>Revisar que los documentos que forman el expediente estén
-                                                    en orden con las leyes de contratación</p></li>
+                                                <li><p id="exlabs0"></p></li>
+                                                <li><p id="exlabs1"></p></li>
+                                                <li><p id="exlabs2"></p></li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li class="mb-1">
                                         <div class="d-grid gap-2">
-                                            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#analistapm">Analista de Planificacion de Mtto</button>
+                                            <button 
+                                                class="btn btn-outline-secondary" 
+                                                data-bs-toggle="collapse" 
+                                                data-bs-target="#analistapm">Analista de Planificacion de Mtto</button>
                                         </div>                                        
                                         <div id="analistapm" class="collapse mt-2" data-bs-parent="#colapso-laboral">
                                             <h6>Petróleos de Venezuela, S.A</h6>
                                             <p>10/2014 a 10/2016</p>
-                                            <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                            <h5 class="lightedc">Logros/Funciones</h5>
                                             <ul>
-                                                <li><p>Administrar Ordenes de Trabajo de Mantenimiento Electrico</p></li>
-                                                <li><p>Elaborar la Planificacion del mantenimiento de los equipos
-                                                    electricos</p></li>
-                                                <li><p>Hacer seguimiento al cumplimiento la planificación</p></li>
+                                                <li><p id="exlabplans0"></p></li>
+                                                <li><p id="exlabplans1"></p></li>
+                                                <li><p id="exlabplans2"></p></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -331,7 +336,7 @@
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed"
                             data-bs-toggle="collapse"
-                            data-bs-target="#academica"><strong>EXPERIENCIA ACADEMICA</strong></button>
+                            data-bs-target="#academica"><b>EXPERIENCIA ACADEMICA</b></button>
                         </h3>
                         <div class="accordion-collapse collapse" id="academica" data-bs-parent="#acordeonPapa">
                             <div class="accordion-body">
@@ -343,9 +348,8 @@
                                         <div id="proyectog" class="collapse mt-2" data-bs-parent="#colapso-academico">
                                             <h4>(05/2022 - 06/2022)</h4>
                                             <ul>
-                                                <li><p>Desarrollo de modelo de base de datos Sequelize</p></li>
-                                                <li><p>Desarrollo de funciones para manejo de datos en el Backend
-                                                    usando javascript, nodejs y sequelize</p></li>
+                                                <li><p id="exacgrus0"></p></li>
+                                                <li><p id="exacgrus1"></p></li>
                                             </ul>
                                         </div>                                        
                                     </li>
@@ -356,9 +360,9 @@
                                         <div id="proyectoi" class="collapse mt-2" data-bs-parent="#colapso-academico">
                                             <h4>(04/2022 - 05/2022)</h4>
                                             <ul>
-                                                <li><p>Desarrollo de modelos de base datos Sequelize</p></li>
-                                                <li><p>Creacion de Servidor Express</p></li>
-                                                <li><p>Creacion de Componentes React-Redux</p></li>
+                                                <li><p id="exacinds0"></p></li>
+                                                <li><p id="exacinds1"></p></li>
+                                                <li><p id="exacinds2"></p></li>
                                             </ul>
                                         </div>                                        
                                     </li>
@@ -418,13 +422,9 @@
     <!--Contenedor para Pantalla grande-->
     <div class="d-none d-lg-block">
         <article class="card border-white">
-            <div class="card-body mb-2">
-                <!--Titulo-->
-                <h1 id="tl1" class="card-title mb-2"></h1>
-                <h4 id="tl2" class="card-subtitle mb-2"></h4>
-                <p id="tl3" class="card-text"></p>
+            <div class="card-body mb-2">                
                 <!--Contacto-->
-                <div class="p-2 text-white rounded h5" style="background-color:lightslategray;">
+                <div class="p-2 text-white rounded h5 lighted">
                     <div class="row mb-2">
                         <div class="col">
                             <img id="cil0" style="width: 30px;" alt=""> 
@@ -456,7 +456,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <!--Formacion-->
-                            <h3 class="mb-3" style="color: lightslategray;"><strong>FORMACION</strong></h3>
+                            <h3 class="mb-3 lightedc"><b>FORMACION</b></h3>
                             <ul class="list-unstyled">
                                 <li>
                                     <div class="mb-3">
@@ -482,7 +482,7 @@
                                                             <li>
                                                                 <h6>Lenguaje de Programacion:</h6>
                                                                 <h6>JavaScript /  ECMAScript</h6>
-                                                                <p id="full0">Estructura de datos, Bucles, Funciones, Operadores, Objetos, Clases, Promesas, Modulos, Clousures, Manejo de errores</p>
+                                                                <p id="full0"></p>
                                                             </li>
                                                             <li>
                                                                 <h6>Frontend - Hltm/Css:</h6>
@@ -524,13 +524,13 @@
                         </div>
                         <div class="mb-3">
                             <!--Experiencia Laboral-->
-                            <h3  class="mb-3" style="color: lightslategray;"><strong>EXPERIENCIA LABORAL</strong></h3>
+                            <h3  class="mb-3 lightedc"><b>EXPERIENCIA LABORAL</b></h3>
                             <ul class="list-unstyled">
                                 <li>
                                     <h4>Desarrollo de App Web</h4>
                                     <h6>Estetica - Freelancer</h6>
                                     <p>07/2022 a presente</p>
-                                    <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                    <h5 class="lightedc">Logros/Funciones</h5>
                                     <ul>
                                         <li><p id="eull0"></p></li>
                                         <li><p id="eull1"></p></li>
@@ -540,24 +540,22 @@
                                     <h4>Analista de Procesos de Compra (Procura)</h4>
                                     <h6>Petróleos de Venezuela, S.A</h6>
                                     <p>10/2018 a 03/2019</p>
-                                    <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                    <h5 class="lightedc">Logros/Funciones</h5>
                                     <ul>
-                                        <li><p>Iniciar expedientes de compra</p></li>
-                                        <li><p>Realizar reuniones periodicas con los requirientes</p></li>
-                                        <li><p>Revisar que los documentos que forman el expediente estén
-                                            en orden con las leyes de contratación</p></li>
+                                        <li><p id="exlabl0"></p></li>
+                                        <li><p id="exlabl1"></p></li>
+                                        <li><p id="exlabl2"></p></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <h4>Analista de Planificacion de Mantenimiento</h4>
                                     <h6>Petróleos de Venezuela, S.A</h6>
                                     <p>10/2014 a 10/2016</p>
-                                    <h5 style="color: lightslategray;">Logros/Funciones</h5>
+                                    <h5 class="lightedc">Logros/Funciones</h5>
                                     <ul>
-                                        <li><p>Administrar Ordenes de Trabajo de Mantenimiento Electrico</p></li>
-                                        <li><p>Elaborar la Planificacion del mantenimiento de los equipos
-                                            electricos</p></li>
-                                        <li><p>Hacer seguimiento al cumplimiento la planificación</p></li>
+                                        <li><p id="exlabplanl0"></p></li>
+                                        <li><p id="exlabplanl1"></p></li>
+                                        <li><p id="exlabplanl2"></p></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -565,15 +563,14 @@
                     </div>
                     <div class="col">
                         <!--Competencias-->
-                        <h3 class="mb-3" style="color: lightslategray;"><strong>COMPETENCIAS</strong></h3>
+                        <h3 class="mb-3 lightedc"><b>COMPETENCIAS</b></h3>
                         <div class="row mb-3">
                             <div class="mb-2">
                                 <div class="d-inline">
                                     <button
                                     data-bs-placement="left"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Lenguaje de Programacion">
                                         JavaScript
@@ -583,8 +580,7 @@
                                     <button
                                     data-bs-placement="top"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Lenguaje de Programacion">
                                         Python
@@ -594,8 +590,7 @@
                                     <button
                                     data-bs-placement="top"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Lenguaje de Programacion">
                                         Java
@@ -605,8 +600,7 @@
                                     <button
                                     data-bs-placement="top"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Libreria de JavaScript">
                                         ReactJs
@@ -616,8 +610,7 @@
                                     <button
                                     data-bs-placement="top"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Framework JavaScript/TypeScript">
                                         Angular
@@ -627,8 +620,7 @@
                                     <button
                                     data-bs-placement="top"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Framework JavaScript">
                                         Bootstrap
@@ -638,8 +630,7 @@
                                     <button
                                     data-bs-placement="top"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="ORM para consulta de base de datos">
                                         Sequelize
@@ -651,8 +642,7 @@
                                     <button
                                     data-bs-placement="left"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Administrador de Base de datos">
                                         PostgreSql
@@ -662,8 +652,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Lenguaje de consulta para base de datos">
                                         Sql
@@ -673,8 +662,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Lenguaje de etiquetas">
                                         Html
@@ -684,8 +672,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Estilos en Cascada para Html">
                                         Css
@@ -695,8 +682,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Framework Backend">
                                         ExpressJs
@@ -706,8 +692,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Portal para alojar versiones de codigo">
                                         GitHub
@@ -717,8 +702,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Entorno de Ejecucion JavaScript">
                                         NodeJs
@@ -728,8 +712,7 @@
                                     <button
                                     data-bs-placement="right"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Metodologia agil">
                                         Scrum
@@ -741,8 +724,7 @@
                                     <button
                                     data-bs-placement="bottom"
                                     data-bs-trigger="focus"
-                                    class="rounded text-white border-0" 
-                                    style="background-color:lightslategray;" 
+                                    class="rounded text-white border-0 lighted"
                                     data-bs-toggle="popover" 
                                     data-bs-content="Programacion en VBA">
                                         Macros Excel
@@ -751,50 +733,49 @@
                             </div>
                         </div>
                         <!--Experiencia Academica-->
-                        <h3  class="mb-3" style="color: lightslategray;"><strong>EXPERIENCIA ACADEMICA</strong></h3>
+                        <h3  class="mb-3 lightedc"><b>EXPERIENCIA ACADEMICA</b></h3>
                         <div class="row mb-3">                            
                             <ul class="list-unstyled">
                                 <li>
                                     <h4>Proyecto Grupar Ecomerce (05/2022 - 06/2022)</h4>
                                     <ul>
-                                        <li><p>Desarrollo de modelo de base de datos Sequelize</p></li>
-                                        <li><p>Desarrollo de funciones para manejo de datos en el Backend
-                                            usando javascript, nodejs y sequelize</p></li>
+                                        <li><p id="exacgrul0"></p></li>
+                                        <li><p id="exacgrul1"></p></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <h4>Proyecto Individual Henry (04/2022 - 05/2022)</h4>
                                     <ul>
-                                        <li><p>Desarrollo de modelos de base datos Sequelize</p></li>
-                                        <li><p>Creacion de Servidor Express</p></li>
-                                        <li><p>Creacion de Componentes React-Redux</p></li>
+                                        <li><p id="exacindl0"></p></li>
+                                        <li><p id="exacindl1"></p></li>
+                                        <li><p id="exacindl2"></p></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <!--Idiomas-->
-                        <h3  class="mb-3" style="color: lightslategray;"><strong>IDIOMAS</strong></h3>
+                        <h3  class="mb-3 lightedc"><b>IDIOMAS</b></h3>
                         <div class="row mb-3">
                             <div class="col">
                                 <h4>Español</h4>
-                                <p><strong>Nativo</strong></p>
+                                <p><b>Nativo</b></p>
                             </div>
                             <div class="col">
                                 <h4>Ingles</h4>
-                                <p><strong>Intermedio</strong></p>
+                                <p><b>Intermedio</b></p>
                             </div>
                         </div>
                         <!--Intereses-->
-                        <h3  class="mb-3" style="color: lightslategray;"><strong>INTERESES</strong></h3>
+                        <h3  class="mb-3 lightedc"><b>INTERESES</b></h3>
                         <div class="row mb-3">
                             <div class="m-2">
-                                <strong>Video Juegos de Estrategia</strong>
+                                <b>Video Juegos de Estrategia</b>
                             </div>
                             <div class="m-2">
-                                <strong>Senderismo</strong>
+                                <b>Senderismo</b>
                             </div>
                             <div class="m-2">
-                                <strong>Ciclismo</strong>
+                                <b>Ciclismo</b>
                             </div>
                         </div>
                     </div>
@@ -837,6 +818,25 @@
             experiencial:[
                 "Desarrollo de backend con Javascript, nodejs, sequelize,posgresql, express",
                 "Desarrollo de Frontend con Javascript, React, Boostrap"
+            ],
+            exlaboral:[
+                "Iniciar expedientes de compra",
+                "Realizar reuniones periodicas con los requirientes",
+                "Revisar que los documentos que forman el expediente estén en orden con las leyes de contratación"
+            ],
+            exlaboplan:[
+                "Administrar Ordenes de Trabajo de Mantenimiento Electrico",
+                "Elaborar la Planificacion del mantenimiento de los equipos electricos",
+                "Hacer seguimiento al cumplimiento la planificación"
+            ],
+            expacagrup:[
+                "Desarrollo de modelo de base de datos Sequelize",
+                "Desarrollo de funciones para manejo de datos en el Backend usando javascript, nodejs y sequelize"
+            ],
+            expacaind:[
+                "Desarrollo de modelos de base datos Sequelize",
+                "Creacion de Servidor Express",
+                "Creacion de Componentes React-Redux"
             ]
         }
         
@@ -847,10 +847,21 @@
 
                 document.getElementById(`euls${i}`).innerHTML=datos.experiencial[i]
                 document.getElementById(`eull${i}`).innerHTML=datos.experiencial[i]
+
+                document.getElementById(`exacgrus${i}`).innerHTML=datos.expacagrup[i]
+                document.getElementById(`exacgrul${i}`).innerHTML=datos.expacagrup[i]
             }
             if(i>=0 && i<=2){
-                document.getElementById(`ts${i+1}`).innerHTML=datos.titulo[i]
-                document.getElementById(`tl${i+1}`).innerHTML=datos.titulo[i]                
+                document.getElementById(`tl${i+1}`).innerHTML=datos.titulo[i]
+
+                document.getElementById(`exlabs${i}`).innerHTML=datos.exlaboral[i]
+                document.getElementById(`exlabl${i}`).innerHTML=datos.exlaboral[i]
+
+                document.getElementById(`exlabplans${i}`).innerHTML=datos.exlaboplan[i]
+                document.getElementById(`exlabplanl${i}`).innerHTML=datos.exlaboplan[i]
+
+                document.getElementById(`exacinds${i}`).innerHTML=datos.expacaind[i]
+                document.getElementById(`exacindl${i}`).innerHTML=datos.expacaind[i]
             }
             if(i>=0 && i<=4){
                 document.getElementById(`cis${i}`).src=datos.contacto[i]
@@ -861,8 +872,6 @@
                 document.getElementById(`full${i}`).innerHTML=datos.formacion[i]
             }
         }
-        
-
     </script>
 </body>
 </html>
