@@ -38,7 +38,7 @@
                         </div>
                         <div class="m-1">
                             <img id="cis1" class="widthimged" alt="">
-                            <span>+573206707858</span>
+                            <a id="cias2" class="link-light" target="_blank">+573206707858</a>
                         </div>
                         <div class="m-1">
                             <img id="cis2" class="widthimged" alt="">
@@ -431,8 +431,8 @@
                             sedwarb@gmail.com
                         </div>
                         <div class="col">
-                            <img id="cil1" style="width: 30px;" alt="">
-                            +573206707858
+                            <img id="cil1" style="width: 30px;" alt="">                            
+                            <a id="cial2" class="link-light" target="_blank">+573206707858</a>
                         </div>
                     </div>
                     <div class="row mb-2">
@@ -805,7 +805,8 @@
             ],
             referencia:[
                 "https://www.linkedin.com/in/edwar-sebrian-8b3b59225",
-                "https://github.com/sedwarb/"
+                "https://github.com/sedwarb/",
+                "https://wa.me/573206707858?text=Hola,%20vi%20tu%20CV%20y%20me%20comunico%20con%20tigo%20por%20esta%20via"
             ],
             formacion:[
                 "Estructura de datos, Bucles, Funciones, Operadores, Objetos, Clases, Promesas, Modulos, Clousures, Manejo de errores",
@@ -842,9 +843,6 @@
         
         for (let i = 0; i <= 5; i++){
             if(i>=0 && i<=1){
-                document.getElementById(`cias${i}`).href=datos.referencia[i]
-                document.getElementById(`cial${i}`).href=datos.referencia[i]
-
                 document.getElementById(`euls${i}`).innerHTML=datos.experiencial[i]
                 document.getElementById(`eull${i}`).innerHTML=datos.experiencial[i]
 
@@ -852,6 +850,9 @@
                 document.getElementById(`exacgrul${i}`).innerHTML=datos.expacagrup[i]
             }
             if(i>=0 && i<=2){
+                document.getElementById(`cias${i}`).href=datos.referencia[i]
+                document.getElementById(`cial${i}`).href=datos.referencia[i]
+
                 document.getElementById(`tl${i+1}`).innerHTML=datos.titulo[i]
 
                 document.getElementById(`exlabs${i}`).innerHTML=datos.exlaboral[i]
