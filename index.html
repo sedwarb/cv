@@ -83,36 +83,14 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <h6>Contenido del Curso</h6>
-                                                        <ul>
-                                                            <li>
-                                                                <h6>Lenguaje de Programacion:</h6>
-                                                                <h6>JavaScript /  ECMAScript</h6>
-                                                                <p id="fuls0"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Frontend - Hltm/Css:</h6>
-                                                                <p id="fuls1"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Framework Frontend:</h6>
-                                                                <h6>ReactJs</h6>
-                                                                <p id="fuls2"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Framework Backend:</h6>
-                                                                <h6>ExpresstJs</h6>
-                                                                <p id="fuls3"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Backend - ORM:</h6>
-                                                                <h6>Sequelize</h6>
-                                                                <p id="fuls4"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Backend - Base de Datos:</h6>
-                                                                <h6>PostgreSql</h6>
-                                                                <p id="fuls5"></p>
-                                                            </li>
+                                                        <ul id="modalult">
+                                                            <template id="modallit">
+                                                                <li>
+                                                                    <h6></h6>
+                                                                    <h6 class="modalth6"></h6>
+                                                                    <p></p>
+                                                                </li>
+                                                            </template>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -731,6 +709,31 @@
         comptp.appendChild(fragmentoComtT)
         //Competencias Telefono (Fin)
 
+        //Ul Modal Inicio
+        const ulmodal = [
+            {h61:"Lenguaje de Programacion:",h62:"JavaScript /  ECMAScript",p:datos.formacion[0]},
+            {h61:"Frontend - Hltm/Css:",h62:"",p:datos.formacion[1]},
+            {h61:"Framework Frontend:",h62:"ReactJs",p:datos.formacion[2]},
+            {h61:"Framework Backend:",h62:"ExpresstJs",p:datos.formacion[3]},
+            {h61:"Backend - ORM:",h62:"Sequelize",p:datos.formacion[4]},
+            {h61:"Backend - Base de Datos:",h62:"PostgreSql",p:datos.formacion[5]}
+        ]
+
+        const modalult = document.getElementById("modalult"),
+        modallit = document.getElementById("modallit").content
+        fragmentoModal = document.createDocumentFragment()
+
+        ulmodal.forEach(el=>{
+            modallit.querySelector("h6").textContent = el.h61
+            modallit.querySelector(".modalth6").textContent = el.h62
+            modallit.querySelector("p").textContent = el.p
+            let clon = document.importNode(modallit,true)
+            fragmentoModal.appendChild(clon)
+        })
+
+        modalult.appendChild(fragmentoModal)
+        //Ul Modal Fin
+
         for (let i = 0; i <= 5; i++){
             if(i>=0 && i<=1){
                 document.getElementById(`euls${i}`).innerHTML=datos.experiencial[i]
@@ -759,7 +762,7 @@
                 document.getElementById(`cil${i}`).src=datos.contacto[i]
             }
             if(i>=0 && i<=5){
-                document.getElementById(`fuls${i}`).innerHTML=datos.formacion[i]
+                //document.getElementById(`fuls${i}`).innerHTML=datos.formacion[i]
                 document.getElementById(`full${i}`).innerHTML=datos.formacion[i]
             }
         }
