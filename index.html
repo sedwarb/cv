@@ -127,9 +127,7 @@
                                             <h6>Estetica - Freelancer</h6>
                                             <p>07/2022 a presente</p>
                                             <h5 class="lightedc">Logros/Funciones</h5>
-                                            <ul>
-                                                <li><p id="euls0"></p></li>
-                                                <li><p id="euls1"></p></li>
+                                            <ul id="exlaesfreeul">
                                             </ul>
                                         </div>
                                     </li>
@@ -144,10 +142,7 @@
                                             <h6>Petróleos de Venezuela, S.A</h6>
                                             <p>10/2018 a 03/2019</p>
                                             <h5 class="lightedc">Logros/Funciones</h5>
-                                            <ul>
-                                                <li><p id="exlabs0"></p></li>
-                                                <li><p id="exlabs1"></p></li>
-                                                <li><p id="exlabs2"></p></li>
+                                            <ul id="exlaancoul">
                                             </ul>
                                         </div>
                                     </li>
@@ -162,10 +157,7 @@
                                             <h6>Petróleos de Venezuela, S.A</h6>
                                             <p>10/2014 a 10/2016</p>
                                             <h5 class="lightedc">Logros/Funciones</h5>
-                                            <ul>
-                                                <li><p id="exlabplans0"></p></li>
-                                                <li><p id="exlabplans1"></p></li>
-                                                <li><p id="exlabplans2"></p></li>
+                                            <ul id="exlaanplaul">
                                             </ul>
                                         </div>
                                     </li>
@@ -189,9 +181,7 @@
                                         </div>
                                         <div id="proyectog" class="collapse mt-2" data-bs-parent="#colapso-academico">
                                             <h4>(05/2022 - 06/2022)</h4>
-                                            <ul>
-                                                <li><p id="exacgrus0"></p></li>
-                                                <li><p id="exacgrus1"></p></li>
+                                            <ul id="exacgrul">
                                             </ul>
                                         </div>                                        
                                     </li>
@@ -201,10 +191,7 @@
                                         </div>
                                         <div id="proyectoi" class="collapse mt-2" data-bs-parent="#colapso-academico">
                                             <h4>(04/2022 - 05/2022)</h4>
-                                            <ul>
-                                                <li><p id="exacinds0"></p></li>
-                                                <li><p id="exacinds1"></p></li>
-                                                <li><p id="exacinds2"></p></li>
+                                            <ul id="exacind">
                                             </ul>
                                         </div>                                        
                                     </li>
@@ -217,19 +204,17 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed"
                             data-bs-toggle="collapse"
-                            data-bs-target="#idiomas"><strong>IDIOMAS</strong></button>
+                            data-bs-target="#idiomas"><b>IDIOMAS</b></button>
                         </h2>
                         <div class="accordion-collapse collapse" id="idiomas" data-bs-parent="#acordeonPapa">
                             <div class="accordion-body">
-                                <div class="row mb-3">
-                                    <div class="col">
-                                        <h4>Español</h4>
-                                        <p><strong>Nativo</strong></p>
-                                    </div>
-                                    <div class="col">
-                                        <h4>Ingles</h4>
-                                        <p><strong>Intermedio</strong></p>
-                                    </div>
+                                <div class="row mb-3" id="idiomap">
+                                    <template id="idiomat">
+                                        <div class="col">
+                                            <h4></h4>
+                                            <p><b></b></p>
+                                        </div>
+                                    </template>
                                 </div>
                             </div>
                         </div>
@@ -239,20 +224,16 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed"
                             data-bs-toggle="collapse"
-                            data-bs-target="#intereses"><strong>INTERESES</strong></button>
+                            data-bs-target="#intereses"><b>INTERESES</b></button>
                         </h2>
                         <div class="accordion-collapse collapse" id="intereses" data-bs-parent="#acordeonPapa">
                             <div class="accordion-body">
-                                <div class="row mb-3">
-                                    <div class="m-2">
-                                        <strong>Video Juegos de Estrategia</strong>
-                                    </div>
-                                    <div class="m-2">
-                                        <strong>Senderismo</strong>
-                                    </div>
-                                    <div class="m-2">
-                                        <strong>Ciclismo</strong>
-                                    </div>
+                                <div class="row mb-3" id="interesp">
+                                    <template id="interest">
+                                        <div class="m-2">
+                                            <b></b>
+                                        </div>
+                                    </template>
                                 </div>
                             </div>
                         </div>
@@ -262,6 +243,7 @@
         </article>
     </div>
     <!--Contenedor para Pantalla grande-->
+    <!--FALTA ANEXAR A PANTALLA GRANDE-->
     <div class="d-none d-lg-block">
         <article class="card border-white">
             <div class="card-body mb-2">                
@@ -627,23 +609,67 @@
                 "Desarrollo de modelos de base datos Sequelize",
                 "Creacion de Servidor Express",
                 "Creacion de Componentes React-Redux"
+            ],
+            intereses:[
+                {b:"Video Juegos de Estrategia"},
+                {b:"Senderismo"},
+                {b:"Ciclismo"}
+            ],
+            idioma:[
+                {h4:"Español",b:"Nativo"},
+                {h4:"Ingles",b:"Intermedio"}
+            ],
+            contactoT:[
+                {tipo:false,text:"sedwarb@gmail.com",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTf7aLasF02TzckSQdXO1qgXEsWMZ8uu1yy2fke8kOqyIzYD9TrXF4bJIaz6oaHsJDrgg&usqp=CAU"},
+                {tipo:"https://wa.me/573206707858?text=Hola,%20vi%20tu%20CV%20y%20me%20comunico%20con%20tigo%20por%20esta%20via",text:"+573206707858",img:"data:image/png;base64,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"},
+                {tipo:false,text:"Cali, Colombia",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRo7Fyhe-Xbc1TlODkPyaZbf9LakiM8aoqFoX83d-zQl9_a21cSLZFLyLbqX8Z8jUMxEU&usqp=CAU"},
+                {tipo:"https://www.linkedin.com/in/edwar-sebrian-8b3b59225",text:"linkedin/Edwar",img:"https://cdn.pixabay.com/photo/2017/10/04/11/58/linkedin-2815969_1280.jpg"},
+                {tipo:"https://github.com/sedwarb/",text:"github/sedwarb",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/200px-GitHub_Invertocat_Logo.svg.png"}
+            ],
+            competenT:[
+                [
+                    {titulo:"Lenguaje de Programacion",text:"JavaScript"},
+                    {titulo:"Lenguaje de Programacion",text:"Python"},
+                    {titulo:"Lenguaje de Programacion",text:"Java"}
+                ],
+                [
+                    {titulo:"Framework JavaScript/TypeScript",text:"Angular"},
+                    {titulo:"Framework JavaScript",text:"Bootstrap"},
+                    {titulo:"Lenguaje de consulta para base de datos",text:"Sql"}
+                ],
+                [
+                    {titulo:"Estilos en Cascada para Html",text:"Css"},
+                    {titulo:"ORM para consulta de base de datos",text:"Sequelize"},
+                    {titulo:"Lenguaje de etiquetas",text:"Html"}
+                ],
+                [
+                    {titulo:"Framework Backend Javascript",text:"ExpressJs"},
+                    {titulo:"Portal para alojar versiones de codigo",text:"Github"},
+                    {titulo:"Entorno de Ejecucion JavaScript",text:"NodeJs"}
+                ],
+                [
+                    {titulo:"Libreria de JavaScript",text:"ReactJs"},
+                    {titulo:"Programacion en VBA",text:"Macros Excel"},
+                    {titulo:"Administrador de Base de datos",text:"PostgreSql"}
+                ]
+            ],
+            ulmodal:[
+                {h61:"Lenguaje de Programacion:",h62:"JavaScript /  ECMAScript",p:"Estructura de datos, Bucles, Funciones, Operadores, Objetos, Clases, Promesas, Modulos, Clousures, Manejo de errores"},
+                {h61:"Frontend - Hltm/Css:",h62:"",p:"Lenguaje de Etiquetas y Hojas de Estilo en Cascada"},
+                {h61:"Framework Frontend:",h62:"ReactJs",p:"Componentes, Estados, Hooks, Eventos, Developer Tool, Enrutado, Redux"},
+                {h61:"Framework Backend:",h62:"ExpresstJs",p:"Direccionamiento, Rutas, Metodos de respuesta"},
+                {h61:"Backend - ORM:",h62:"Sequelize",p:"Modelos, Instancias, Consultas, Validaciones, Asociaciones"},
+                {h61:"Backend - Base de Datos:",h62:"PostgreSql",p:"Motor de Base de datos, uso de aplicacion"}
             ]
         }
         
         //Contacto Telefono (Inicio)
-        const contactoT = [
-            {tipo:false,text:"sedwarb@gmail.com",img:datos.contacto[0]},
-            {tipo:datos.referencia[2],text:"+573206707858",img:datos.contacto[1]},
-            {tipo:false,text:"Cali, Colombia",img:datos.contacto[2]},
-            {tipo:datos.referencia[0],text:"linkedin/Edwar",img:datos.contacto[3]},
-            {tipo:datos.referencia[1],text:"github/sedwarb",img:datos.contacto[4]}
-        ],
-        contactopt = document.getElementById("contactopt"),
+        const contactopt = document.getElementById("contactopt"),
         tctipo1 = document.getElementById("tctipo1").content,
         tctipo2 = document.getElementById("tctipo2").content,
         fragmento = document.createDocumentFragment()
 
-        contactoT.forEach(el=>{
+        datos.contactoT.forEach(el=>{
             if(el.tipo){
                 tctipo2.querySelector("a").href = el.tipo
                 tctipo2.querySelector("a").textContent = el.text
@@ -662,46 +688,19 @@
         //Contacto Telefono(Fin)
 
         //Competencias Telefono (Inicio)
-        const competenT = [
-            [
-                {titulo:"Lenguaje de Programacion",text:"JavaScript"},
-                {titulo:"Lenguaje de Programacion",text:"Python"},
-                {titulo:"Lenguaje de Programacion",text:"Java"}
-            ],
-            [
-                {titulo:"Framework JavaScript/TypeScript",text:"Angular"},
-                {titulo:"Framework JavaScript",text:"Bootstrap"},
-                {titulo:"Lenguaje de consulta para base de datos",text:"Sql"}
-            ],
-            [
-                {titulo:"Estilos en Cascada para Html",text:"Css"},
-                {titulo:"ORM para consulta de base de datos",text:"Sequelize"},
-                {titulo:"Lenguaje de etiquetas",text:"Html"}
-            ],
-            [
-                {titulo:"Framework Backend Javascript",text:"ExpressJs"},
-                {titulo:"Portal para alojar versiones de codigo",text:"Github"},
-                {titulo:"Entorno de Ejecucion JavaScript",text:"NodeJs"}
-            ],
-            [
-                {titulo:"Libreria de JavaScript",text:"ReactJs"},
-                {titulo:"Programacion en VBA",text:"Macros Excel"},
-                {titulo:"Administrador de Base de datos",text:"PostgreSql"}
-            ],
-        ],
-        comptp = document.getElementById("comptp"),
+        const comptp = document.getElementById("comptp"),
         fragmentoComtT = document.createDocumentFragment()
 
-        for (let i = 0; i < competenT.length; i++) {
+        for (let i = 0; i < datos.competenT.length; i++) {
             const div = document.createElement("div")
             div.className = `pos${i} mb-1`
             fragmentoComtT.appendChild(div)
-            for (let j = 0; j < competenT[i].length; j++) {
+            for (let j = 0; j < datos.competenT[i].length; j++) {
                 const ndiv = fragmentoComtT.querySelector(`.pos${i}`),
                 boton = document.createElement("button")
                 boton.className = "rounded m-1 text-white border-0 lighted"
-                boton.textContent = competenT[i][j].text
-                boton.title = competenT[i][j].titulo
+                boton.textContent = datos.competenT[i][j].text
+                boton.title = datos.competenT[i][j].titulo
                 ndiv.appendChild(boton)
             }
         }
@@ -709,60 +708,76 @@
         comptp.appendChild(fragmentoComtT)
         //Competencias Telefono (Fin)
 
-        //Ul Modal Inicio
-        const ulmodal = [
-            {h61:"Lenguaje de Programacion:",h62:"JavaScript /  ECMAScript",p:datos.formacion[0]},
-            {h61:"Frontend - Hltm/Css:",h62:"",p:datos.formacion[1]},
-            {h61:"Framework Frontend:",h62:"ReactJs",p:datos.formacion[2]},
-            {h61:"Framework Backend:",h62:"ExpresstJs",p:datos.formacion[3]},
-            {h61:"Backend - ORM:",h62:"Sequelize",p:datos.formacion[4]},
-            {h61:"Backend - Base de Datos:",h62:"PostgreSql",p:datos.formacion[5]}
-        ]
+        //Experiencia Laborar / Experiencia Academica - Inicio
 
-        const modalult = document.getElementById("modalult"),
-        modallit = document.getElementById("modallit").content
-        fragmentoModal = document.createDocumentFragment()
+        function experiencia(datos,elemento) {
+            const fragmento = document.createDocumentFragment(),
+            elementoLoc = document.getElementById(elemento)
+            datos.forEach(el=>{
+                const li = document.createElement("li")
+                li.textContent = el
+                fragmento.appendChild(li)
+            })
+            elementoLoc.appendChild(fragmento)
+        }
+        experiencia(datos.experiencial,"exlaesfreeul")
+        experiencia(datos.exlaboral,"exlaancoul")
+        experiencia(datos.exlaboplan,"exlaanplaul")
+        experiencia(datos.expacagrup,"exacgrul")
+        experiencia(datos.expacaind,"exacind")
 
-        ulmodal.forEach(el=>{
-            modallit.querySelector("h6").textContent = el.h61
-            modallit.querySelector(".modalth6").textContent = el.h62
-            modallit.querySelector("p").textContent = el.p
-            let clon = document.importNode(modallit,true)
-            fragmentoModal.appendChild(clon)
-        })
+        //Experiencia Laborar / Experiencia Academica - Fin        
 
-        modalult.appendChild(fragmentoModal)
-        //Ul Modal Fin
+        //Intereses / Idiomas / Modal Inicio
+
+        function templateFrag(padreS,temp,array) {
+            const padre = document.getElementById(padreS),
+            template = document.getElementById(temp).content,
+            fragmento = document.createDocumentFragment()
+            array.forEach(el=>{
+                let h4 = template.querySelector("h4"),
+                h6 = template.querySelector("h6"),
+                modalth6 = template.querySelector(".modalth6"),
+                p = template.querySelector("p"),
+                b = template.querySelector("b")
+
+                if(h4) h4.textContent = el.h4
+                if(h6) h6.textContent = el.h61
+                if(modalth6) modalth6.textContent = el.h62
+                if(p) p.textContent = el.p
+                if(b) b.textContent = el.b
+                let clon = document.importNode(template,true)
+                fragmento.appendChild(clon)
+            })
+            padre.appendChild(fragmento)
+        }
+        templateFrag("interesp","interest",datos.intereses)
+        templateFrag("idiomap","idiomat",datos.idioma)
+        templateFrag("modalult","modallit",datos.ulmodal)
+
+        //Intereses / Idiomas / Modal Fin
 
         for (let i = 0; i <= 5; i++){
             if(i>=0 && i<=1){
-                document.getElementById(`euls${i}`).innerHTML=datos.experiencial[i]
                 document.getElementById(`eull${i}`).innerHTML=datos.experiencial[i]
 
-                document.getElementById(`exacgrus${i}`).innerHTML=datos.expacagrup[i]
                 document.getElementById(`exacgrul${i}`).innerHTML=datos.expacagrup[i]
             }
             if(i>=0 && i<=2){
-                //document.getElementById(`cias${i}`).href=datos.referencia[i]
                 document.getElementById(`cial${i}`).href=datos.referencia[i]
 
                 document.getElementById(`tl${i+1}`).innerHTML=datos.titulo[i]
 
-                document.getElementById(`exlabs${i}`).innerHTML=datos.exlaboral[i]
                 document.getElementById(`exlabl${i}`).innerHTML=datos.exlaboral[i]
 
-                document.getElementById(`exlabplans${i}`).innerHTML=datos.exlaboplan[i]
                 document.getElementById(`exlabplanl${i}`).innerHTML=datos.exlaboplan[i]
 
-                document.getElementById(`exacinds${i}`).innerHTML=datos.expacaind[i]
                 document.getElementById(`exacindl${i}`).innerHTML=datos.expacaind[i]
             }
             if(i>=0 && i<=4){
-                //document.getElementById(`cis${i}`).src=datos.contacto[i]
                 document.getElementById(`cil${i}`).src=datos.contacto[i]
             }
             if(i>=0 && i<=5){
-                //document.getElementById(`fuls${i}`).innerHTML=datos.formacion[i]
                 document.getElementById(`full${i}`).innerHTML=datos.formacion[i]
             }
         }
