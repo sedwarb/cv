@@ -82,6 +82,7 @@
                                                         <button class="btn-close" data-bs-dismiss="modal"></button>
                                                     </div>
                                                     <div class="modal-body">
+                                                        <!--MODAL-->
                                                         <h6>Contenido del Curso</h6>
                                                         <ul id="modalult">
                                                             <template id="modallit">
@@ -243,13 +244,29 @@
         </article>
     </div>
     <!--Contenedor para Pantalla grande-->
-    <!--FALTA ANEXAR A PANTALLA GRANDE-->
+    <!--FALTA ANEXAR contacto y competencias-->
     <div class="d-none d-lg-block">
         <article class="card border-white">
             <div class="card-body mb-2">                
                 <!--Contacto-->
-                <div class="p-2 text-white rounded h5 lighted">
-                    <div class="row mb-2">
+                <div class="p-2 text-white rounded h5 lighted"  id="contactopt">
+                    
+                    <!--Tipo 1-->
+                    <template id="tctipo1l">
+                        <div class="col">
+                            <img class="widthimged">
+                            <span></span>
+                        </div>
+                    </template>
+                    <!--Tipo 2-->
+                    <template id="tctipo2l">
+                        <div class="col">
+                            <img class="widthimged">
+                            <a class="link-light" target="_blank"></a>
+                        </div>
+                    </template>
+                
+                    <div class="row mb-2">                        
                         <div class="col">
                             <img id="cil0" style="width: 30px;" alt=""> 
                             sedwarb@gmail.com
@@ -275,6 +292,7 @@
                             <a id="cial1" class="link-light" target="_blank">github.com/sedwarb</a>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="row mb-2">
                     <div class="col">
@@ -301,37 +319,16 @@
                                                         <button class="btn-close" data-bs-dismiss="modal"></button>
                                                     </div>
                                                     <div class="modal-body">
+                                                        <!--MODAL-->
                                                         <h6>Contenido del Curso</h6>
-                                                        <ul>
-                                                            <li>
-                                                                <h6>Lenguaje de Programacion:</h6>
-                                                                <h6>JavaScript /  ECMAScript</h6>
-                                                                <p id="full0"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Frontend - Hltm/Css:</h6>
-                                                                <p id="full1"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Framework Frontend:</h6>
-                                                                <h6>ReactJs</h6>
-                                                                <p id="full2"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Framework Backend:</h6>
-                                                                <h6>ExpresstJs</h6>
-                                                                <p id="full3"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Backend - ORM:</h6>
-                                                                <h6>Sequelize</h6>
-                                                                <p id="full4"></p>
-                                                            </li>
-                                                            <li>
-                                                                <h6>Backend - Base de Datos:</h6>
-                                                                <h6>PostgreSql</h6>
-                                                                <p id="full5"></p>
-                                                            </li>
+                                                        <ul id="modalultl">
+                                                            <template id="modallitl">
+                                                                <li>
+                                                                    <h6></h6>
+                                                                    <h6 class="modalth6"></h6>
+                                                                    <p></p>
+                                                                </li>
+                                                            </template>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -355,9 +352,7 @@
                                     <h6>Estetica - Freelancer</h6>
                                     <p>07/2022 a presente</p>
                                     <h5 class="lightedc">Logros/Funciones</h5>
-                                    <ul>
-                                        <li><p id="eull0"></p></li>
-                                        <li><p id="eull1"></p></li>
+                                    <ul id="exlaesfreeull">
                                     </ul>
                                 </li>
                                 <li>
@@ -365,10 +360,7 @@
                                     <h6>Petróleos de Venezuela, S.A</h6>
                                     <p>10/2018 a 03/2019</p>
                                     <h5 class="lightedc">Logros/Funciones</h5>
-                                    <ul>
-                                        <li><p id="exlabl0"></p></li>
-                                        <li><p id="exlabl1"></p></li>
-                                        <li><p id="exlabl2"></p></li>
+                                    <ul id="exlaancoull">
                                     </ul>
                                 </li>
                                 <li>
@@ -376,10 +368,7 @@
                                     <h6>Petróleos de Venezuela, S.A</h6>
                                     <p>10/2014 a 10/2016</p>
                                     <h5 class="lightedc">Logros/Funciones</h5>
-                                    <ul>
-                                        <li><p id="exlabplanl0"></p></li>
-                                        <li><p id="exlabplanl1"></p></li>
-                                        <li><p id="exlabplanl2"></p></li>
+                                    <ul id="exlaanplaull">
                                     </ul>
                                 </li>
                             </ul>
@@ -514,45 +503,34 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <h4>Proyecto Grupar Ecomerce (05/2022 - 06/2022)</h4>
-                                    <ul>
-                                        <li><p id="exacgrul0"></p></li>
-                                        <li><p id="exacgrul1"></p></li>
+                                    <ul id="exacgrull">
                                     </ul>
                                 </li>
                                 <li>
                                     <h4>Proyecto Individual Henry (04/2022 - 05/2022)</h4>
-                                    <ul>
-                                        <li><p id="exacindl0"></p></li>
-                                        <li><p id="exacindl1"></p></li>
-                                        <li><p id="exacindl2"></p></li>
+                                    <ul id="exacindl">
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <!--Idiomas-->
                         <h3  class="mb-3 lightedc"><b>IDIOMAS</b></h3>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <h4>Español</h4>
-                                <p><b>Nativo</b></p>
-                            </div>
-                            <div class="col">
-                                <h4>Ingles</h4>
-                                <p><b>Intermedio</b></p>
-                            </div>
+                        <div class="row mb-3" id="idiomapl">
+                            <template id="idiomatl">
+                                <div class="col">
+                                    <h4></h4>
+                                    <p><b></b></p>
+                                </div>
+                            </template>
                         </div>
                         <!--Intereses-->
                         <h3  class="mb-3 lightedc"><b>INTERESES</b></h3>
-                        <div class="row mb-3">
-                            <div class="m-2">
-                                <b>Video Juegos de Estrategia</b>
-                            </div>
-                            <div class="m-2">
-                                <b>Senderismo</b>
-                            </div>
-                            <div class="m-2">
-                                <b>Ciclismo</b>
-                            </div>
+                        <div class="row mb-3" id="interespl">
+                            <template id="interestl">
+                                <div class="m-2">
+                                    <b></b>
+                                </div>
+                            </template>
                         </div>
                     </div>
                 </div>
@@ -664,6 +642,32 @@
         }
         
         //Contacto Telefono (Inicio)
+        function contacto(padre,temp1,temp2,datos) {
+            const contactopt = document.getElementById(padre),
+            tctipo1 = document.getElementById(temp1).content,
+            tctipo2 = document.getElementById(temp2).content,
+            fragmento = document.createDocumentFragment()
+
+            datos.forEach(el=>{
+                if(el.tipo){
+                    tctipo2.querySelector("a").href = el.tipo
+                    tctipo2.querySelector("a").textContent = el.text
+                    tctipo2.querySelector("img").src = el.img
+                    let clon = document.importNode(tctipo2,true)
+                    fragmento.appendChild(clon)
+                }else{
+                    tctipo1.querySelector("img").src = el.img
+                    tctipo1.querySelector("span").textContent = el.text
+                    let clon = document.importNode(tctipo1,true)
+                    fragmento.appendChild(clon)
+                }
+            })
+
+            contactopt.appendChild(fragmento)
+        }
+        contacto("contactopt","tctipo1","tctipo2",datos.contactoT)
+
+        /*
         const contactopt = document.getElementById("contactopt"),
         tctipo1 = document.getElementById("tctipo1").content,
         tctipo2 = document.getElementById("tctipo2").content,
@@ -685,6 +689,7 @@
         })
 
         contactopt.appendChild(fragmento)
+        */
         //Contacto Telefono(Fin)
 
         //Competencias Telefono (Inicio)
@@ -720,11 +725,21 @@
             })
             elementoLoc.appendChild(fragmento)
         }
+        //Experiencia Laboral WebApp
         experiencia(datos.experiencial,"exlaesfreeul")
+        experiencia(datos.experiencial,"exlaesfreeull")
+        //Experiencia Laboral Compras
         experiencia(datos.exlaboral,"exlaancoul")
+        experiencia(datos.exlaboral,"exlaancoull")
+        //Experiencia Laboral Planificacion        
         experiencia(datos.exlaboplan,"exlaanplaul")
+        experiencia(datos.exlaboplan,"exlaanplaull")
+        //Experiencia Academica Grupal
         experiencia(datos.expacagrup,"exacgrul")
+        experiencia(datos.expacagrup,"exacgrull")
+        //Experiencia Academica Individual
         experiencia(datos.expacaind,"exacind")
+        experiencia(datos.expacaind,"exacindl")
 
         //Experiencia Laborar / Experiencia Academica - Fin        
 
@@ -751,34 +766,26 @@
             })
             padre.appendChild(fragmento)
         }
+        //Intereses
         templateFrag("interesp","interest",datos.intereses)
+        templateFrag("interespl","interestl",datos.intereses)
+        //Idiomas
         templateFrag("idiomap","idiomat",datos.idioma)
+        templateFrag("idiomapl","idiomatl",datos.idioma)
+        //Modal
         templateFrag("modalult","modallit",datos.ulmodal)
+        templateFrag("modalultl","modallitl",datos.ulmodal)
 
         //Intereses / Idiomas / Modal Fin
 
         for (let i = 0; i <= 5; i++){
-            if(i>=0 && i<=1){
-                document.getElementById(`eull${i}`).innerHTML=datos.experiencial[i]
-
-                document.getElementById(`exacgrul${i}`).innerHTML=datos.expacagrup[i]
-            }
             if(i>=0 && i<=2){
                 document.getElementById(`cial${i}`).href=datos.referencia[i]
 
                 document.getElementById(`tl${i+1}`).innerHTML=datos.titulo[i]
-
-                document.getElementById(`exlabl${i}`).innerHTML=datos.exlaboral[i]
-
-                document.getElementById(`exlabplanl${i}`).innerHTML=datos.exlaboplan[i]
-
-                document.getElementById(`exacindl${i}`).innerHTML=datos.expacaind[i]
             }
             if(i>=0 && i<=4){
                 document.getElementById(`cil${i}`).src=datos.contacto[i]
-            }
-            if(i>=0 && i<=5){
-                document.getElementById(`full${i}`).innerHTML=datos.formacion[i]
             }
         }
     </script>
