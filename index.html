@@ -244,29 +244,12 @@
         </article>
     </div>
     <!--Contenedor para Pantalla grande-->
-    <!--FALTA ANEXAR contacto y competencias-->
     <div class="d-none d-lg-block">
         <article class="card border-white">
             <div class="card-body mb-2">                
                 <!--Contacto-->
                 <div class="p-2 text-white rounded h5 lighted"  id="contactopt">
-                    
-                    <!--Tipo 1-->
-                    <template id="tctipo1l">
-                        <div class="col">
-                            <img class="widthimged">
-                            <span></span>
-                        </div>
-                    </template>
-                    <!--Tipo 2-->
-                    <template id="tctipo2l">
-                        <div class="col">
-                            <img class="widthimged">
-                            <a class="link-light" target="_blank"></a>
-                        </div>
-                    </template>
-                
-                    <div class="row mb-2">                        
+                    <div class="row mb-2" id="emailtel">                        
                         <div class="col">
                             <img id="cil0" style="width: 30px;" alt=""> 
                             sedwarb@gmail.com
@@ -276,7 +259,7 @@
                             <a id="cial2" class="link-light" target="_blank">+573206707858</a>
                         </div>
                     </div>
-                    <div class="row mb-2">
+                    <div class="row mb-2" id="ubiclink">
                         <div class="col">
                             <img  id="cil2" style="width: 30px;" alt="">
                             Cali, Colombia
@@ -286,13 +269,12 @@
                             <a id="cial0" class="link-light" target="_blank">linkedin/edwar-sebrian</a>
                         </div>
                     </div>
-                    <div class="row mb-2">
+                    <div class="row mb-2" id="git">
                         <div class="col">
                             <img id="cil4" style="width: 30px;" alt="">
                             <a id="cial1" class="link-light" target="_blank">github.com/sedwarb</a>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
                 <div class="row mb-2">
                     <div class="col">
@@ -347,7 +329,7 @@
                             <!--Experiencia Laboral-->
                             <h3  class="mb-3 lightedc"><b>EXPERIENCIA LABORAL</b></h3>
                             <ul class="list-unstyled">
-                                <li>
+                                <li class="mb-2">
                                     <h4>Desarrollo de App Web</h4>
                                     <h6>Estetica - Freelancer</h6>
                                     <p>07/2022 a presente</p>
@@ -355,7 +337,7 @@
                                     <ul id="exlaesfreeull">
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="mb-2">
                                     <h4>Analista de Procesos de Compra (Procura)</h4>
                                     <h6>Petróleos de Venezuela, S.A</h6>
                                     <p>10/2018 a 03/2019</p>
@@ -501,7 +483,7 @@
                         <h3  class="mb-3 lightedc"><b>EXPERIENCIA ACADEMICA</b></h3>
                         <div class="row mb-3">                            
                             <ul class="list-unstyled">
-                                <li>
+                                <li class="mb-2">
                                     <h4>Proyecto Grupar Ecomerce (05/2022 - 06/2022)</h4>
                                     <ul id="exacgrull">
                                     </ul>
@@ -666,32 +648,8 @@
             contactopt.appendChild(fragmento)
         }
         contacto("contactopt","tctipo1","tctipo2",datos.contactoT)
-
-        /*
-        const contactopt = document.getElementById("contactopt"),
-        tctipo1 = document.getElementById("tctipo1").content,
-        tctipo2 = document.getElementById("tctipo2").content,
-        fragmento = document.createDocumentFragment()
-
-        datos.contactoT.forEach(el=>{
-            if(el.tipo){
-                tctipo2.querySelector("a").href = el.tipo
-                tctipo2.querySelector("a").textContent = el.text
-                tctipo2.querySelector("img").src = el.img
-                let clon = document.importNode(tctipo2,true)
-                fragmento.appendChild(clon)
-            }else{
-                tctipo1.querySelector("img").src = el.img
-                tctipo1.querySelector("span").textContent = el.text
-                let clon = document.importNode(tctipo1,true)
-                fragmento.appendChild(clon)
-            }
-        })
-
-        contactopt.appendChild(fragmento)
-        */
         //Contacto Telefono(Fin)
-
+        
         //Competencias Telefono (Inicio)
         const comptp = document.getElementById("comptp"),
         fragmentoComtT = document.createDocumentFragment()
@@ -782,7 +740,7 @@
             if(i>=0 && i<=2){
                 document.getElementById(`cial${i}`).href=datos.referencia[i]
 
-                document.getElementById(`tl${i+1}`).innerHTML=datos.titulo[i]
+                document.getElementById(`tl${i+1}`).textContent=datos.titulo[i]
             }
             if(i>=0 && i<=4){
                 document.getElementById(`cil${i}`).src=datos.contacto[i]
